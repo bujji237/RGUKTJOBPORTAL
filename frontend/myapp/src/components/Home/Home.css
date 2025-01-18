@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.mainpage-homepage-container{
+    margin: 0px;
+}
+.welcome-area-section{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 50px;
+    font-family: "Roboto";
+}
+.welcom-area-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcom-area-left-heading{
+    font-weight: bold;
+    color: #0A2540;
+    margin-bottom: 15px;
+}
+.welcom-area-left-subtitle{
+    color: #0A2540;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.welcom-area-right-image{
+    width: 60%;
+}
+
+.welcom-area-left-btn {
+    width: 150px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcom-area-left-btn:hover {
+    background-color: #0056B3;
+    box-shadow: 0px 10px 20px rgba(0, 86, 179, 0.3);
+}
+
+.welcom-area-left-btn:disabled {
+    background-color: #A5D8FF;
+    cursor: not-allowed;
+}
+
+
+/* Features.css */
+.features-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: "Roboto";
+    margin-bottom: 30px;
+}
+
+.features-header {
+    font-size: 2rem;
+    color: #0A2540;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* LatestJobs.css */
+
+.latest-jobs-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: "Roboto";
+}
+  
+.latest-jobs-header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.job-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.job-list-item:hover {
+    transform: translateY(-5px);
+}
+
+.job-details {
+    max-width: 70%;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-location,
+.job-type {
+    font-size: 1rem;
+    color: #555;
+}
+
+.apply-now-button {
+    width: 150px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apply-now-button:hover {
+    background-color: #0056B3;
+    box-shadow: 0px 10px 20px rgba(0, 86, 179, 0.3);
+}
+
+.apply-now-button:disabled {
+    background-color: #A5D8FF;
+    cursor: not-allowed;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .welcome-area-section{
+        margin: 100px 50px;
+    }
+    .welcom-area-left-heading{
+        text-align: center;
+    }
+    .welcom-area-left-subtitle{
+        font-size: 16px;
+        text-align: center;
+    }
+    .welcom-area-right-image{
+        display: none;
+    }
+    .welcom-area-left-btn {
+        font-size: 16px;
+    }
+
+    /* Features.css */
+    .features-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .features-header {
+        font-size: 1.5rem;
+    }
+    .features-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-card h3 {
+        font-size: 1rem;
+    }
+    .feature-card p {
+        font-size: 0.5rem;
+    }
+    /* LatestJobs.css */
+    .latest-jobs-section {
+        padding: 40px;
+        height: 200px;
+    }
+    .latest-jobs-header {
+        font-size: 1.5rem;
+    }
+    .job-title {
+        font-size: 1rem;
+    }
+    .job-location,
+    .job-type {
+        font-size: 0.5rem;
+    }
+    
+    .apply-now-button {
+        width: 100px;
+        padding: 5px;
+        font-size: 14px;
+    } 
+}
