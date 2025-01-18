@@ -134,7 +134,7 @@ function Signup (){
                 },
                 body : JSON.stringify(userData)
             }
-            const response = await fetch("http://localhost:3000/signup" , options)
+            const response = await fetch("https://rguktjobportal-1.onrender.com/signup" , options)
             const data = await response.json();
             console.log(data);
             if(response.status === 201){
